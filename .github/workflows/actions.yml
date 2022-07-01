@@ -9,6 +9,6 @@ jobs:
       - name: Simple go actions
         uses: actions/setup-go@v3.2.0
         with: 
-          go-version: "latest"
+          go-version: "1.18.3"
       - name: Check version of go
         run: go version
