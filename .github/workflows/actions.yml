@@ -1,0 +1,14 @@
+name: Actions workflow
+
+on: [push]
+
+jobs: 
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simple go actions
+        uses: actions/setup-go@latest
+        with: 
+          go-version: "latest"
+      - name: Check version of go
+        run: go version
